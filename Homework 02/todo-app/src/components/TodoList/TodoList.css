@@ -1,0 +1,117 @@
+body {
+  background: linear-gradient(135deg, #c6e8f8, #e4f7fd);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-list-container {
+  width: 600px;
+  margin: 60px auto;
+  padding: 25px 30px;
+  background: #ffffffcc;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.todo-list-container h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.06em;
+  font-size: 30px;
+}
+
+ul.todo-items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-item {
+  position: relative;
+  padding: 14px 20px;
+  margin-bottom: 14px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
+  transform: translateY(-2px);
+}
+
+.todo-item.done {
+  background-color: #e9fbe9;
+  border-left: 4px solid #28a745;
+  color: #2d662d;
+  text-decoration: line-through;
+}
+
+.todo-item span:first-child {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.todo-item span:last-child {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.todo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.todo-form button {
+  padding: 10px 16px;
+  background-color: #507eff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-form button:hover {
+  background-color: #1a57ff;
+}
+
+.finish-btn {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.finish-btn:hover {
+  background-color: #218838;
+}
