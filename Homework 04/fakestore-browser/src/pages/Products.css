@@ -1,0 +1,17 @@
+.products-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.products-header {
+  font-size: 32px;
+  color: #5a2a34;
+  margin-bottom: 20px;
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
